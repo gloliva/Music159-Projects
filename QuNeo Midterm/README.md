@@ -28,7 +28,7 @@ The Presentation view of the patch shows each of the 16 soundscapes and how they
 
 ## QuNeo Device Handler
 
-QuNeo raw data is packaged as an OSC bundle and routed throughout the patch to detect button presses and pressure.
+QuNeo raw data is packaged as an OSC bundle and routed throughout the patch to detect button presses and pressure, which correspond to actions like playing a soundscape, changing the speed or pitch of a selected soundscape, or adding effects to a selected soundscape.
 ![quneo](../media/midterm/quneo-handler.PNG)
 
 ## Using Samples
