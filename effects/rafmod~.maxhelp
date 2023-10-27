@@ -2,14 +2,15 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 7,
-			"minor" : 3,
-			"revision" : 4,
+			"major" : 8,
+			"minor" : 5,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 35.0, 82.0, 890.0, 960.0 ],
+		"classnamespace" : "box",
+		"rect" : [ 42.0, 85.0, 890.0, 444.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +39,7 @@
 		"subpatcher_template" : "",
 		"showrootpatcherontab" : 0,
 		"showontab" : 0,
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-3",
@@ -47,14 +49,15 @@
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
-							"major" : 7,
-							"minor" : 3,
-							"revision" : 4,
+							"major" : 8,
+							"minor" : 5,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 890.0, 934.0 ],
+						"classnamespace" : "box",
+						"rect" : [ 0.0, 26.0, 890.0, 418.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -82,6 +85,7 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"showontab" : 1,
+						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-8",
@@ -90,7 +94,6 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "float", "bang" ],
 									"patching_rect" : [ 107.0, 483.25, 165.0, 22.0 ],
-									"style" : "",
 									"text" : "buffer~ buf02 bass.aif -1"
 								}
 
@@ -103,7 +106,6 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "float", "bang" ],
 									"patching_rect" : [ 107.0, 447.25, 165.0, 22.0 ],
-									"style" : "",
 									"text" : "buffer~ buf01 brushes.aif -1"
 								}
 
@@ -116,7 +118,6 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "float", "bang" ],
 									"patching_rect" : [ 107.0, 414.25, 165.0, 22.0 ],
-									"style" : "",
 									"text" : "buffer~ buf00 drumloop.aif -1"
 								}
 
@@ -128,7 +129,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 623.0, 174.0, 52.0, 20.0 ],
-									"style" : "",
 									"text" : "Mod Hz"
 								}
 
@@ -140,8 +140,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 528.833313, 167.0, 67.0, 34.0 ],
-									"style" : "",
+									"patching_rect" : [ 528.833312999999976, 167.0, 67.0, 34.0 ],
 									"text" : "Change \nWaveform",
 									"textjustification" : 1
 								}
@@ -154,8 +153,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 450.666656, 167.0, 65.0, 34.0 ],
-									"style" : "",
+									"patching_rect" : [ 450.666655999999989, 167.0, 65.0, 34.0 ],
 									"text" : "Change \nSynth",
 									"textjustification" : 1
 								}
@@ -240,8 +238,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 624.0, 203.0, 50.0, 22.0 ],
-									"style" : ""
+									"patching_rect" : [ 624.0, 203.0, 50.0, 22.0 ]
 								}
 
 							}
@@ -255,8 +252,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 537.333313, 203.0, 50.0, 22.0 ],
-									"style" : ""
+									"patching_rect" : [ 537.333312999999976, 203.0, 50.0, 22.0 ]
 								}
 
 							}
@@ -270,8 +266,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 450.666656, 203.0, 50.0, 22.0 ],
-									"style" : ""
+									"patching_rect" : [ 450.666655999999989, 203.0, 50.0, 22.0 ]
 								}
 
 							}
@@ -283,7 +278,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
 									"patching_rect" : [ 364.0, 238.0, 279.0, 22.0 ],
-									"style" : "",
 									"text" : "rafmod~"
 								}
 
@@ -291,22 +285,22 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-4",
+									"lastchannelcount" : 0,
 									"maxclass" : "live.gain~",
 									"numinlets" : 2,
 									"numoutlets" : 5,
 									"orientation" : 1,
 									"outlettype" : [ "signal", "signal", "", "float", "list" ],
 									"parameter_enable" : 1,
-									"patching_rect" : [ 307.0, 292.0, 136.0, 49.0 ],
-									"presentation_rect" : [ 0.0, 0.0, 0.0, 49.0 ],
+									"patching_rect" : [ 307.0, 292.0, 136.0, 47.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
+											"parameter_initial" : [ -70.0 ],
 											"parameter_longname" : "live.gain~[1]",
+											"parameter_mmax" : 6.0,
+											"parameter_mmin" : -70.0,
 											"parameter_shortname" : "live.gain~",
 											"parameter_type" : 0,
-											"parameter_mmin" : -70.0,
-											"parameter_mmax" : 6.0,
-											"parameter_initial" : [ -70.0 ],
 											"parameter_unitstyle" : 4
 										}
 
@@ -322,8 +316,7 @@
 									"maxclass" : "ezdac~",
 									"numinlets" : 2,
 									"numoutlets" : 0,
-									"patching_rect" : [ 307.0, 348.0, 48.25, 48.25 ],
-									"style" : ""
+									"patching_rect" : [ 307.0, 348.0, 48.25, 48.25 ]
 								}
 
 							}
@@ -415,11 +408,9 @@
 						"description" : "",
 						"digest" : "",
 						"globalpatchername" : "",
-						"style" : "",
 						"tags" : ""
 					}
 ,
-					"style" : "",
 					"text" : "p \"With Samples\""
 				}
 
@@ -433,14 +424,15 @@
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
-							"major" : 7,
-							"minor" : 3,
-							"revision" : 4,
+							"major" : 8,
+							"minor" : 5,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 35.0, 108.0, 890.0, 934.0 ],
+						"classnamespace" : "box",
+						"rect" : [ 42.0, 111.0, 890.0, 418.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -468,6 +460,7 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"showontab" : 1,
+						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-26",
@@ -475,7 +468,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 598.5, 170.0, 52.0, 20.0 ],
-									"style" : "",
 									"text" : "Mod Hz"
 								}
 
@@ -488,7 +480,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 509.5, 163.0, 67.0, 34.0 ],
-									"style" : "",
 									"text" : "Change \nWaveform",
 									"textjustification" : 1
 								}
@@ -502,7 +493,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 436.5, 163.0, 65.0, 34.0 ],
-									"style" : "",
 									"text" : "Change \nSynth",
 									"textjustification" : 1
 								}
@@ -587,8 +577,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 599.5, 199.0, 50.0, 22.0 ],
-									"style" : ""
+									"patching_rect" : [ 599.5, 199.0, 50.0, 22.0 ]
 								}
 
 							}
@@ -602,8 +591,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 518.0, 199.0, 50.0, 22.0 ],
-									"style" : ""
+									"patching_rect" : [ 518.0, 199.0, 50.0, 22.0 ]
 								}
 
 							}
@@ -617,8 +605,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 436.5, 199.0, 50.0, 22.0 ],
-									"style" : ""
+									"patching_rect" : [ 436.5, 199.0, 50.0, 22.0 ]
 								}
 
 							}
@@ -630,7 +617,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
 									"patching_rect" : [ 355.0, 234.0, 263.5, 22.0 ],
-									"style" : "",
 									"text" : "rafmod~"
 								}
 
@@ -643,7 +629,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
 									"patching_rect" : [ 355.0, 199.0, 62.0, 22.0 ],
-									"style" : "",
 									"text" : "saw~ 440"
 								}
 
@@ -651,22 +636,22 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-4",
+									"lastchannelcount" : 0,
 									"maxclass" : "live.gain~",
 									"numinlets" : 2,
 									"numoutlets" : 5,
 									"orientation" : 1,
 									"outlettype" : [ "signal", "signal", "", "float", "list" ],
 									"parameter_enable" : 1,
-									"patching_rect" : [ 299.0, 278.0, 136.0, 49.0 ],
-									"presentation_rect" : [ 0.0, 0.0, 0.0, 49.0 ],
+									"patching_rect" : [ 299.0, 278.0, 136.0, 47.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
+											"parameter_initial" : [ -70.0 ],
 											"parameter_longname" : "live.gain~",
+											"parameter_mmax" : 6.0,
+											"parameter_mmin" : -70.0,
 											"parameter_shortname" : "live.gain~",
 											"parameter_type" : 0,
-											"parameter_mmin" : -70.0,
-											"parameter_mmax" : 6.0,
-											"parameter_initial" : [ -70.0 ],
 											"parameter_unitstyle" : 4
 										}
 
@@ -682,8 +667,7 @@
 									"maxclass" : "ezdac~",
 									"numinlets" : 2,
 									"numoutlets" : 0,
-									"patching_rect" : [ 299.0, 345.0, 48.25, 48.25 ],
-									"style" : ""
+									"patching_rect" : [ 299.0, 345.0, 48.25, 48.25 ]
 								}
 
 							}
@@ -782,11 +766,9 @@
 						"description" : "",
 						"digest" : "",
 						"globalpatchername" : "",
-						"style" : "",
 						"tags" : ""
 					}
 ,
-					"style" : "",
 					"text" : "p \"With Oscillators\""
 				}
 
@@ -795,18 +777,21 @@
 		"lines" : [  ],
 		"parameters" : 		{
 			"obj-1::obj-4" : [ "live.gain~", "live.gain~", 0 ],
-			"obj-3::obj-4" : [ "live.gain~[1]", "live.gain~", 0 ]
+			"obj-3::obj-4" : [ "live.gain~[1]", "live.gain~", 0 ],
+			"parameterbanks" : 			{
+				"0" : 				{
+					"index" : 0,
+					"name" : "",
+					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+				}
+
+			}
+,
+			"inherited_shortname" : 1
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "rafmod~.maxpat",
-				"bootpath" : "D:/Users/gloliva/Documents/MaxWorld/abstractions",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.route.mxe64",
+				"name" : "o.compose.mxe64",
 				"type" : "mx64"
 			}
 , 			{
@@ -818,8 +803,15 @@
 				"type" : "mx64"
 			}
 , 			{
-				"name" : "o.compose.mxe64",
+				"name" : "o.route.mxe64",
 				"type" : "mx64"
+			}
+, 			{
+				"name" : "rafmod~.maxpat",
+				"bootpath" : "D:/Users/gloliva/Documents/Music159 GitHub/effects",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
 			}
  ],
 		"autosave" : 0
