@@ -35,4 +35,3 @@ If you would like to view the source patches directly as opposed to opening the 
 ## Credits
 
 All patches in this repository were designed and developed by Gregg Oliva.
-
